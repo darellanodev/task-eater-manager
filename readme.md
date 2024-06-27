@@ -6,3 +6,4 @@ An easy to do task manager
 
 - [x] first commit
 - [x] create github repo
+- [x] use jest to create the first class using TDD
