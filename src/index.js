@@ -1,1 +1,1 @@
-console.log('hello task eater manager!');
+console.log("hello task eater manager!")
