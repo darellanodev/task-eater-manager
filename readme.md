@@ -6,6 +6,9 @@ An easy to do task manager
 
 ## Todo
 
+- [x] add task method
+- [x] remove task method
+- [x] convert to typescript
 - [ ] setInterval to count down a timed task
 - [ ] setTimeout to make an action (p.e. save task) with a cancel button
 - [ ] setTimeout when the user delete a task with a cancel button
