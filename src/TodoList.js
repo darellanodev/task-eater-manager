@@ -9,4 +9,7 @@ export class TodoList {
   addTask(task) {
     this.#tasks.push(task)
   }
+  removeTask(taskText) {
+    this.#tasks = this.#tasks.filter((task) => task.name !== taskText)
+  }
 }
