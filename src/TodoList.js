@@ -6,4 +6,7 @@ export class TodoList {
   get tasks() {
     return this.#tasks
   }
+  addTask(task) {
+    this.#tasks.push(task)
+  }
 }
