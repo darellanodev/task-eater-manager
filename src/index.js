@@ -15,12 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const todoList = new TodoList()
   DOM.form.addEventListener("submit", (event) => {
     event.preventDefault()
-    console.log(
-      `Submit button clicked, with new task value: ${DOM.newTask.value}`,
-    )
     // add task
-    const element = document.createElement("p")
-    element.innerHTML = DOM.newTask.value
-    DOM.tasks.appendChild(element)
+    console.log(`adding new task: ${DOM.newTask.value}`)
+    todoList.addTask(new Task(DOM.newTask.value))
+    // clear all
+    console.log("clearing all tasks")
+    DOM.tasks.innerHTML = ""
+    // show all
+    console.log("showing all tasks")
+    todoList.tasks.forEach((task) => {
+      const element = document.createElement("p")
+      element.innerHTML = task.name
+      DOM.tasks.appendChild(element)
+    })
   })
 })
