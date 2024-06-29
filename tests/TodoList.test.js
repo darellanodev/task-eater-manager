@@ -1,8 +1,8 @@
 import { TodoList } from "../src/TodoList"
 
-test("get items", () => {
+test("get tasks", () => {
   const todoList = new TodoList()
 
-  const items = todoList.items
-  expect(items).toHaveLength(0)
+  const tasks = todoList.tasks
+  expect(tasks).toHaveLength(0)
 })

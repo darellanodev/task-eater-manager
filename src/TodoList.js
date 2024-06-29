@@ -1,9 +1,9 @@
 export class TodoList {
-  #items
+  #tasks
   constructor() {
-    this.#items = []
+    this.#tasks = []
   }
-  get items() {
-    return this.#items
+  get tasks() {
+    return this.#tasks
   }
 }

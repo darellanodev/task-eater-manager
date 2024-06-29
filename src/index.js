@@ -1,7 +1,7 @@
 console.log("Starting app Task Eater Manager")
 
 import { TodoList } from "./TodoList.js"
-import { Item } from "./Item.js"
+import { Task } from "./Task.js"
 
 globalThis.DOM = {}
 const DOM = globalThis.DOM
