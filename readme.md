@@ -6,9 +6,6 @@ An easy to do task manager
 
 ## Todo
 
-- [x] add task method
-- [x] remove task method
-- [x] convert to typescript
 - [ ] setInterval to count down a timed task
 - [ ] setTimeout to make an action (p.e. save task) with a cancel button
 - [ ] setTimeout when the user delete a task with a cancel button
@@ -17,11 +14,11 @@ An easy to do task manager
 - [ ] mixing pattern to inject observer pattern in TodoList
 - [ ] observer pattern for detect changes in TodoList
 - [ ] singleton pattern to implement TodoList class
-- [x] item class
-- [x] logo
-- [x] use jest to create the first class using TDD
-- [x] create github repo
-- [x] first commit
+
+## Techniques applied
+
+- TDD methodology when I can
+- Vim plugin in VSCode to write code faster
 
 ## Notes for VSCode
 
