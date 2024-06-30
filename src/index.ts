@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   DOM.form = document.getElementById("taskform")
   DOM.newTask = document.getElementById("newtask")
   DOM.tasks = document.getElementById("tasks")
+  DOM.messages = document.getElementById("messages")
 
   DOM.form?.addEventListener("submit", (event) => {
     event.preventDefault()
@@ -58,6 +59,18 @@ function showAllTasks() {
 
 async function main() {
   await getDataFromJSONServer()
+  // welcome message
+  addNotification("Welcome!", 3000)
+}
+
+function addNotification(message: string, duration: number) {
+  const notification = document.createElement("DIV")
+  notification.innerHTML = message
+  notification.className = "notification"
+  DOM.messages?.appendChild(notification)
+  setTimeout(() => {
+    notification.remove()
+  }, duration)
 }
 
 async function getDataFromJSONServer() {

@@ -8,10 +8,11 @@ An easy to-do task manager. For learning purposes using Typescript and Jest. _(T
 
 - [x] singleton pattern to implement TodoList class
 - [x] install json-server for simulating an API
-- [ ] observer pattern for detect changes in TodoList
+- [x] create a notification using setTimeout
 - [ ] mixing pattern to inject observer pattern in TodoList
-- [ ] debouncing technique to search tasks or search projects (write a reusable function)
+- [ ] observer pattern for detect changes in TodoList
 - [ ] setInterval to count down a timed task
+- [ ] debouncing technique to search tasks or search projects (write a reusable function)
 - [ ] setTimeout to make an action (p.e. save task) with a cancel button
 - [ ] setTimeout when the user delete a task with a cancel button
 - [ ] message system with setTimeout to welcome the user
@@ -23,6 +24,7 @@ An easy to-do task manager. For learning purposes using Typescript and Jest. _(T
 - Patterns
   - Singleton for classes that only have one instance like TodoList
 - Use of json-server for simulating an API
+- Use of setTimeout to make notifications
 
 ## Notes for VSCode
 

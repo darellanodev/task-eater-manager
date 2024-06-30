@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-  margin-right: 2em;
+  margin-right: 2rem;
 }
 
 .content {
@@ -24,4 +24,13 @@ body {
   border-width: 1px;
   border-radius: 7px;
   color: black;
+}
+
+.notification {
+  border: 1px white solid;
+  background-color: darkolivegreen;
+  color: black;
+  width: 200px;
+  padding: 1rem;
+  font-size: 1.6rem;
 }
