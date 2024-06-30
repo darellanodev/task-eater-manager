@@ -1,5 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #222222;
+  color: darkgrey;
 }
 
 .container {
@@ -15,10 +17,11 @@ body {
 .content {
   width: 300px;
   height: 500px;
-  background-color: gainsboro;
+  background-color: darkgray;
   margin: 20px;
   padding: 30px;
   border-style: solid;
   border-width: 1px;
   border-radius: 7px;
+  color: black;
 }
