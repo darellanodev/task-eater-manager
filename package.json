@@ -4,6 +4,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
+    "@playwright/test": "^1.45.1",
     "@types/jest": "^29.5.12",
     "babel-jest": "^29.7.0",
     "eslint": "^9.6.0",
@@ -14,6 +15,11 @@
   },
   "scripts": {
     "test": "jest --colors",
-    "start": "json-server --watch db.json"
+    "start": "json-server --watch db.json",
+    "e2e": "npx playwright test",
+    "server": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
