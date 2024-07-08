@@ -1,5 +1,5 @@
-import { TodoList } from "../src/TodoList"
-import { Task } from "../src/Task"
+import { TodoList } from "../../src/TodoList"
+import { Task } from "../../src/Task"
 
 test("get tasks", () => {
   const todoList = new TodoList()
