@@ -9,6 +9,9 @@ An easy to-do task manager. For learning purposes using Typescript and Jest. _(T
 - [x] singleton pattern to implement TodoList class
 - [x] install json-server for simulating an API
 - [x] create a notification using setTimeout
+- [ ] create more e2e tests
+  - [ ] when the user adds a new task clear the input content
+  - [ ] ...
 - [ ] mixing pattern to inject observer pattern in TodoList
 - [ ] observer pattern for detect changes in TodoList
 - [ ] setInterval to count down a timed task
@@ -20,6 +23,8 @@ An easy to-do task manager. For learning purposes using Typescript and Jest. _(T
 ## Techniques applied
 
 - TDD methodology when I can
+- Jest for unit testing
+- Playwright for e2e testing
 - Vim plugin in VSCode to write code faster
 - Patterns
   - Singleton for classes that only have one instance like TodoList
