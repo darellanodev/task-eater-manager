@@ -50,33 +50,33 @@ function clearAllTasks() {
 
 function showAllTasks() {
   console.log("show all tasks")
-  todoList.tasks.forEach((task) => {
-    const taskItem = document.createElement("div")
-    const taskItemTitle = document.createElement("div")
-    const taskItemControls = document.createElement("div")
-    const linkEdit = document.createElement("a")
-    const linkDelete = document.createElement("a")
-    const linkComplete = document.createElement("a")
 
+  todoList.tasks.forEach((task) => {
+    const { name } = task
+
+    const taskItem = document.createElement("div")
     taskItem.className = "item"
+
+    const taskItemTitle = document.createElement("div")
     taskItemTitle.className = "title"
-    taskItemTitle.innerHTML = task.name
+    taskItemTitle.innerHTML = name
+
+    const taskItemControls = document.createElement("div")
     taskItemControls.className = "controls"
 
-    linkEdit.innerHTML = "✏️"
-    linkDelete.innerHTML = "🗑️"
-    linkComplete.innerHTML = "✔️"
+    const createLink = (text: string) => {
+      const link = document.createElement("a")
+      link.innerHTML = text
+      link.setAttribute("href", "#")
+      return link
+    }
 
-    linkEdit.setAttribute("href", "#")
-    linkDelete.setAttribute("href", "#")
-    linkComplete.setAttribute("href", "#")
+    const linkEdit = createLink("✏️")
+    const linkDelete = createLink("🗑️")
+    const linkComplete = createLink("✔️")
 
-    taskItemControls.appendChild(linkEdit)
-    taskItemControls.appendChild(linkDelete)
-    taskItemControls.appendChild(linkComplete)
-
-    taskItem.appendChild(taskItemTitle)
-    taskItem.appendChild(taskItemControls)
+    taskItemControls.append(linkEdit, linkDelete, linkComplete)
+    taskItem.append(taskItemTitle, taskItemControls)
 
     DOM.tasks?.appendChild(taskItem)
   })
