@@ -51,9 +51,34 @@ function clearAllTasks() {
 function showAllTasks() {
   console.log("show all tasks")
   todoList.tasks.forEach((task) => {
-    const element = document.createElement("p")
-    element.innerHTML = task.name
-    DOM.tasks?.appendChild(element)
+    const taskItem = document.createElement("div")
+    const taskItemTitle = document.createElement("div")
+    const taskItemControls = document.createElement("div")
+    const linkEdit = document.createElement("a")
+    const linkDelete = document.createElement("a")
+    const linkComplete = document.createElement("a")
+
+    taskItem.className = "item"
+    taskItemTitle.className = "title"
+    taskItemTitle.innerHTML = task.name
+    taskItemControls.className = "controls"
+
+    linkEdit.innerHTML = "✏️"
+    linkDelete.innerHTML = "🗑️"
+    linkComplete.innerHTML = "✔️"
+
+    linkEdit.setAttribute("href", "#")
+    linkDelete.setAttribute("href", "#")
+    linkComplete.setAttribute("href", "#")
+
+    taskItemControls.appendChild(linkEdit)
+    taskItemControls.appendChild(linkDelete)
+    taskItemControls.appendChild(linkComplete)
+
+    taskItem.appendChild(taskItemTitle)
+    taskItem.appendChild(taskItemControls)
+
+    DOM.tasks?.appendChild(taskItem)
   })
 }
 
