@@ -2,10 +2,23 @@
 
 ![Task Eater Manager banner](https://github.com/darellanodev/task-eater-manager/blob/main/img/github_readme/banner.png?raw=true)
 
-An easy to-do task manager. For learning purposes using Typescript and Jest. _(THIS APPLICATION IS IN AN EARLY STAGE OF DEVELOPMENT)_
+A clicker style game based on a to-do task management. For learning purposes using Typescript and Jest. _(THIS APPLICATION IS IN AN EARLY STAGE OF DEVELOPMENT)_
 
-## Todo
+## e2e tests
 
+- First run server with `run_server.sh`
+- When the server is running execute `run_e2e`
+
+## compile and run the game
+
+- Execute `run.sh` and wait to typescript end the compiling process
+- Open with Live Server VSCode extension `index.html`
+
+## Tasks
+
+- [ ] a zone representing the player's mind where appears thoughts
+- [ ] the player must write the thoughts on the list exactly with the same text
+- [ ] the player starts with a piece of paper. Later The player can buy a booknote, etc.
 - [x] singleton pattern to implement TodoList class
 - [x] install json-server for simulating an API
 - [x] create a notification using setTimeout
