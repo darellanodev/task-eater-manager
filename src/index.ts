@@ -27,12 +27,20 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault()
 
     addTaskFromInput()
+    clearInput()
     clearAllTasks()
     showAllTasks()
   })
 
   main()
 })
+
+function clearInput() {
+  if (DOM.newTask instanceof HTMLInputElement) {
+    console.log(`clearing value of input: ${DOM.newTask.value}`)
+    DOM.newTask.value = ""
+  }
+}
 
 function addTaskFromInput() {
   if (DOM.newTask instanceof HTMLInputElement) {
