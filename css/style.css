@@ -97,3 +97,13 @@ a {
 #taskform button {
   flex-grow: 1;
 }
+#newtask {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.submit {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}

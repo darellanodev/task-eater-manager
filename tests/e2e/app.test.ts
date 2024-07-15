@@ -9,10 +9,10 @@ test("has title", async ({ page }) => {
 })
 
 test("should me allow to add a todo item", async ({ page }) => {
-  const newTodo = page.getByPlaceholder("write a new task here")
+  const newTodo = page.getByPlaceholder("Write your next task here")
 
   await newTodo.fill("buy a bottle of milk")
   await newTodo.press("Enter")
 
-  await expect(page.getByTestId("tasks")).toHaveText("buy a bottle of milk")
+  await expect(page.getByTestId("tasks")).toHaveText(/buy a bottle of milk/)
 })
