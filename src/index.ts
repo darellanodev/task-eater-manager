@@ -4,13 +4,17 @@ import { TodoList } from "./TodoList.js"
 import { Task } from "./Task.js"
 
 interface GlobalDOM {
-  [key: string]: HTMLElement | HTMLInputElement | null
+  form: HTMLFormElement | null
+  newTask: HTMLInputElement | null
+  tasks: HTMLElement | null
+  messages: HTMLElement | null
 }
+
 declare global {
   var DOM: GlobalDOM
 }
 
-globalThis.DOM = {}
+globalThis.DOM = { form: null, newTask: null, tasks: null, messages: null }
 const DOM = globalThis.DOM
 
 const todoList = new TodoList()
@@ -18,8 +22,8 @@ const todoList = new TodoList()
 document.addEventListener("DOMContentLoaded", () => {
   console.log("The DOM Content is loaded and ready")
   // get html elements
-  DOM.form = document.getElementById("taskform")
-  DOM.newTask = document.getElementById("newtask")
+  DOM.form = document.getElementById("taskform") as HTMLFormElement
+  DOM.newTask = document.getElementById("newtask") as HTMLInputElement
   DOM.tasks = document.getElementById("tasks")
   DOM.messages = document.getElementById("messages")
 
@@ -36,17 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 function clearInput() {
-  if (DOM.newTask instanceof HTMLInputElement) {
-    console.log(`clearing value of input: ${DOM.newTask.value}`)
-    DOM.newTask.value = ""
+  if (DOM.newTask === null) {
+    return
   }
+  console.log(`clearing value of input: ${DOM.newTask.value}`)
+  DOM.newTask.value = ""
 }
 
 function addTaskFromInput() {
-  if (DOM.newTask instanceof HTMLInputElement) {
-    console.log(`adding task from input: ${DOM.newTask.value}`)
-    todoList.addTask(new Task(DOM.newTask.value))
+  if (DOM.newTask === null) {
+    return
   }
+  console.log(`adding task from input: ${DOM.newTask.value}`)
+  todoList.addTask(new Task(DOM.newTask.value))
 }
 
 function clearAllTasks() {
