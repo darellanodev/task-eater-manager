@@ -23,7 +23,6 @@ A clicker style game based on a to-do task management. For learning purposes usi
 - Patterns
   - Singleton for classes that only have one instance like TodoList
 - Use of json-server for simulating an API
-- Use of setTimeout to make notifications
 
 ## Notes for VSCode
 
