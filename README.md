@@ -10,8 +10,8 @@ Run the command `pnpm run sb`
 
 ## e2e tests
 
-- First run server with `run_server.sh`
-- When the server is running execute `run_e2e`
+- Execute `run.sh` or `pnpm run dev`
+- When the local server is ready, in other terminal execute `run_e2e`
 
 ## compile and run the game
 
