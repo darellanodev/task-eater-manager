@@ -4,6 +4,10 @@
 
 A clicker style game based on a to-do task management. For learning purposes using Typescript and Jest. _(THIS APPLICATION IS IN AN EARLY STAGE OF DEVELOPMENT)_
 
+## run storybook
+
+Run the command `pnpm run sb`
+
 ## e2e tests
 
 - First run server with `run_server.sh`
