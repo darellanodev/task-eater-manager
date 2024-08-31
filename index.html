@@ -5,30 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Eater Manager</title>
-    <script src="dist/index.js" type="module"></script>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="left-column">
-            <h1>Task Eater Manager</h1>
-            <img src="./img/logo.png" alt="logo" class="logo">
-            <p>This app is in an early stage of development.</p>
-            <div id="messages"></div>
-        </div>
-        <div class="right-column">
-            <div class="mind">This dashed box represents your mind. Here it will appear your thoughts and you must
-                capture them into the to-do list</div>
-            <div class="taskinput">
-                <form id="taskform">
-                    <input type="text" name="newtask" id="newtask" placeholder="Write your next task here">
-                    <button type="submit" class="submit">add</button>
-                </form>
-            </div>
-            <div data-testid="tasks" id="tasks"></div>
-        </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
 </body>
 
 </html>
