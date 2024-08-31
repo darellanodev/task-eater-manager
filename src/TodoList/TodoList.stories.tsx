@@ -1,19 +1,19 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import React from "react"
+import { StoryFn, Meta } from "@storybook/react"
 
-import { TodoList } from '.';
+import { TodoList } from "."
 
 export default {
-  title: 'Example/TodoList',
+  title: "Example/TodoList",
   component: TodoList,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
-} as Meta<typeof TodoList>;
+} as Meta<typeof TodoList>
 
-const Template: StoryFn<typeof TodoList> = (args:any) => <TodoList {...args} />;
+const Template: StoryFn<typeof TodoList> = (args: any) => <TodoList {...args} />
 
-export const Incomplete = Template.bind({});
+export const Incomplete = Template.bind({})
 Incomplete.args = {
-  title: 'Todo List 1',
-};
+  title: "Todo List 1",
+}

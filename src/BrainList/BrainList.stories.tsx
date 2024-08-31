@@ -1,19 +1,21 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import React from "react"
+import { StoryFn, Meta } from "@storybook/react"
 
-import { BrainList } from '.';
+import { BrainList } from "."
 
 export default {
-  title: 'Example/BrainList',
+  title: "Example/BrainList",
   component: BrainList,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
-} as Meta<typeof BrainList>;
+} as Meta<typeof BrainList>
 
-const Template: StoryFn<typeof BrainList> = (args:any) => <BrainList {...args} />;
+const Template: StoryFn<typeof BrainList> = (args: any) => (
+  <BrainList {...args} />
+)
 
-export const Incomplete = Template.bind({});
+export const Incomplete = Template.bind({})
 Incomplete.args = {
-  title: 'Todo List 1',
-};
+  title: "Todo List 1",
+}

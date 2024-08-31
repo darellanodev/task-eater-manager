@@ -1,18 +1,17 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import React from "react"
+import { StoryFn, Meta } from "@storybook/react"
 
-import { AddTask } from '.';
+import { AddTask } from "."
 
 export default {
-  title: 'Example/AddTask',
+  title: "Example/AddTask",
   component: AddTask,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
-} as Meta<typeof AddTask>;
+} as Meta<typeof AddTask>
 
-const Template: StoryFn<typeof AddTask> = (args) => <AddTask {...args} />;
+const Template: StoryFn<typeof AddTask> = (args) => <AddTask {...args} />
 
-export const Normal = Template.bind({});
-Normal.args = {
-};
+export const Normal = Template.bind({})
+Normal.args = {}

@@ -1,24 +1,24 @@
-import React from 'react';
-import { StoryFn, Meta } from '@storybook/react';
+import React from "react"
+import { StoryFn, Meta } from "@storybook/react"
 
-import { Header } from '.';
+import { Header } from "."
 
 export default {
-  title: 'Example/Header',
+  title: "Example/Header",
   component: Header,
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
-} as Meta<typeof Header>;
+} as Meta<typeof Header>
 
-const Template: StoryFn<typeof Header> = (args) => <Header {...args} />;
+const Template: StoryFn<typeof Header> = (args) => <Header {...args} />
 
-export const LoggedIn = Template.bind({});
+export const LoggedIn = Template.bind({})
 LoggedIn.args = {
   user: {
-    name: 'Jane Doe',
+    name: "Jane Doe",
   },
-};
+}
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {};
+export const LoggedOut = Template.bind({})
+LoggedOut.args = {}

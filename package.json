@@ -4,6 +4,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
+    "@chromatic-com/storybook": "1",
     "@playwright/test": "^1.46.0",
     "@storybook/addon-actions": "^8.2.9",
     "@storybook/addon-docs": "^8.2.9",
@@ -13,6 +14,7 @@
     "@storybook/addon-mdx-gfm": "^8.2.9",
     "@storybook/react": "^8.2.9",
     "@storybook/react-vite": "^8.2.9",
+    "@storybook/test": "8.2.9",
     "@types/jest": "^29.5.12",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
@@ -35,8 +37,7 @@
     "all:build": "yarn build && yarn sb:build",
     "test": "jest --colors",
     "start": "json-server --watch db.json",
-    "e2e": "npx playwright test",
-    "server": "node server.js"
+    "e2e": "pnpm dlx playwright test"
   },
   "dependencies": {
     "react": "^18.3.1",
