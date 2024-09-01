@@ -1,44 +1,33 @@
-import React, { useState } from 'react';
-import './brainlist.css';
-import { Thought } from '../Thought';
+import React, { useState } from 'react'
+import './brainlist.css'
+import { Thought } from '../Thought'
 
 interface TodoListProps {
-  title: string;
+  title: string
 }
 
 export function BrainList({ title }: TodoListProps) {
-  const [thoughts, setThoughts] = useState(
-    [
-      { id: 1, title: 'buy milk', completed: false },
-      { id: 2, title: 'go to gym', completed: true }
-    ]
-  );
+  const [thoughts, setThoughts] = useState([
+    { id: 1, title: 'buy milk', completed: false },
+    { id: 2, title: 'go to gym', completed: true },
+  ])
 
   const toggleThoughtCompletion = (taskId: number) => {
-    setThoughts(
-      prevThoughts => prevThoughts.map(
-        task => task.id === taskId ? { ...task, completed: !task.completed } : task
-      )
-    );
-  };
+    setThoughts((prevThoughts) =>
+      prevThoughts.map((task) =>
+        task.id === taskId ? { ...task, completed: !task.completed } : task,
+      ),
+    )
+  }
 
   return (
     <div className="card">
-      <div className="card-header">
-        {title}
-      </div>
+      <div className="card-header">{title}</div>
       <div className="card-body">
-        {
-          thoughts.map(
-            thought => (
-              <Thought 
-                key={thought.id} 
-                thought={thought}
-              />
-            )
-          )
-        }
+        {thoughts.map((thought) => (
+          <Thought key={thought.id} thought={thought} />
+        ))}
       </div>
     </div>
-  );
+  )
 }

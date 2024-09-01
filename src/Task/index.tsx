@@ -1,21 +1,20 @@
-import React from 'react';
-import './task.css';
+import React from 'react'
+import './task.css'
 
 interface TaskProps {
   task: {
-    id:number;
-    title:string;
-    completed:boolean;
+    id: number
+    title: string
+    completed: boolean
   }
-  onToggle: (taskId: number) => void;
-  
+  onToggle: (taskId: number) => void
 }
 
 export const Task: React.FC<TaskProps> = ({ task, onToggle }) => {
-  const statusClass = task.completed ? 'task completed':'task incomplete' 
+  const statusClass = task.completed ? 'task completed' : 'task incomplete'
   return (
-      <div onClick={() => onToggle(task.id)} className={ statusClass }>
-          {task.title}
-      </div>
-  );
-};
+    <div onClick={() => onToggle(task.id)} className={statusClass}>
+      {task.title}
+    </div>
+  )
+}

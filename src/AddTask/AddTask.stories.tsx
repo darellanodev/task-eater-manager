@@ -1,13 +1,13 @@
-import React from "react"
-import { StoryFn, Meta } from "@storybook/react"
+import React from 'react'
+import { StoryFn, Meta } from '@storybook/react'
 
-import { AddTask } from "."
+import { AddTask } from '.'
 
 export default {
-  title: "Example/AddTask",
+  title: 'Example/AddTask',
   component: AddTask,
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
 } as Meta<typeof AddTask>
 

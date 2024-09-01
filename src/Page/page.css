@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.taskslists>div{
+.taskslists > div {
   flex-grow: 1;
 }
 

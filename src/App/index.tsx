@@ -2,7 +2,6 @@ import { Page } from '../Page'
 import './App.css'
 
 function App() {
-
   return (
     <div>
       <Page />

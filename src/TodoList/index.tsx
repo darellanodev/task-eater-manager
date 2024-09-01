@@ -1,40 +1,33 @@
-import React, { useState } from 'react';
-import './todolist.css';
-import { Task } from '../Task';
+import React, { useState } from 'react'
+import './todolist.css'
+import { Task } from '../Task'
 
 interface TodoListProps {
-  title: string;
+  title: string
 }
 
 export function TodoList({ title }: TodoListProps) {
-  
-  const [tasks, setTasks] = useState(
-      [
-          { id: 1, title: 'buy milk', completed: false },
-          { id: 2, title: 'go to gym', completed: true }
-      ]
-  )
+  const [tasks, setTasks] = useState([
+    { id: 1, title: 'buy milk', completed: false },
+    { id: 2, title: 'go to gym', completed: true },
+  ])
 
-  const toggleTaskCompletion = (taskId:number) => {
-      setTasks(
-          prevTasks => prevTasks.map(
-              task => task.id === taskId ? { ...task, completed: !task.completed } : task
-          )
-      )
+  const toggleTaskCompletion = (taskId: number) => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) =>
+        task.id === taskId ? { ...task, completed: !task.completed } : task,
+      ),
+    )
   }
 
   return (
     <div className="card">
-        <div className="card-header">
-            {title}
-        </div>
-        <div className="card-body">
-            {
-                tasks.map(
-                    task => <Task key={task.id} task={task} onToggle={toggleTaskCompletion} />
-                )
-            }
-        </div>
+      <div className="card-header">{title}</div>
+      <div className="card-body">
+        {tasks.map((task) => (
+          <Task key={task.id} task={task} onToggle={toggleTaskCompletion} />
+        ))}
+      </div>
     </div>
   )
 }
