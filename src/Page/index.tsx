@@ -28,9 +28,7 @@ export const Page: React.VFC = () => {
       />
       <article>
         <section>
-          <p className="read-the-docs">
-            Tutorial 1/8: look at the Brain Thoughts
-          </p>
+          <p className="help">Tutorial 1/8: look at the Brain Thoughts</p>
           <div className="taskslists">
             <BrainList title="Brain thoughts" />
             <TodoList title="Todo List1" />
