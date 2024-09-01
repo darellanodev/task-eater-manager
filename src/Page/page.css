@@ -6,6 +6,10 @@
   flex-grow: 1;
 }
 
+#content {
+  background-color: #242424;
+}
+
 section {
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;

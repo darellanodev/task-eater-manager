@@ -19,7 +19,7 @@ export const Page: React.VFC = () => {
   }
 
   return (
-    <>
+    <div id="content">
       <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
@@ -44,6 +44,6 @@ export const Page: React.VFC = () => {
           </div>
         </section>
       </article>
-    </>
+    </div>
   )
 }
