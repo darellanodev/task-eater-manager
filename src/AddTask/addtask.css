@@ -3,6 +3,12 @@
   align-items: center;
   margin: 20px 0;
   padding: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  text-align: center;
 }
 
 .add-task-input {
