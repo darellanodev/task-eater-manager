@@ -21,9 +21,9 @@ export function BrainList({ title }: TodoListProps) {
   }
 
   return (
-    <div className="card">
-      <div className="card-header">{title}</div>
-      <div className="card-body">
+    <div className="brainlist-card">
+      <div className="brainlist-card-header">{title}</div>
+      <div className="brainlist-card-body">
         {thoughts.map((thought) => (
           <Thought key={thought.id} thought={thought} />
         ))}

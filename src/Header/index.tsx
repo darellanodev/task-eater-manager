@@ -23,13 +23,13 @@ export const Header = ({
   <header>
     <div className="wrapper">
       <div>
-        <img id="logo" src="src/assets/img/logo.svg" />
-        <h1>Task Eater Manager</h1>
+        <img id="header-logo" src="src/assets/img/logo.svg" />
+        <h1 id="header-title">Task Eater Manager</h1>
       </div>
       <div>
         {user ? (
           <>
-            <span className="welcome">
+            <span className="header-welcome">
               Welcome, <b>{user.name}</b>!
             </span>
             <Button size="small" onClick={onLogout} label="Log out" />

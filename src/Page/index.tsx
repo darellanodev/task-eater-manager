@@ -19,7 +19,7 @@ export const Page: React.VFC = () => {
   }
 
   return (
-    <div id="content">
+    <div id="page-content">
       <Header
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
@@ -34,12 +34,10 @@ export const Page: React.VFC = () => {
             <TodoList title="Todo List1" />
           </div>
 
-          <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
+          {/* <button onClick={() => setCount((count) => count + 1)}>
               count is {count}
-            </button>
-            <AddTask onAddTask={handleAddTask} />
-          </div>
+            </button> */}
+          <AddTask onAddTask={handleAddTask} />
         </section>
       </article>
     </div>

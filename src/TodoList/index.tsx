@@ -21,9 +21,9 @@ export function TodoList({ title }: TodoListProps) {
   }
 
   return (
-    <div className="card">
-      <div className="card-header">{title}</div>
-      <div className="card-body">
+    <div className="todo-list-card">
+      <div className="todo-list-card-header">{title}</div>
+      <div className="todo-list-card-body">
         {tasks.map((task) => (
           <Task key={task.id} task={task} onToggle={toggleTaskCompletion} />
         ))}

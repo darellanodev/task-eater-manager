@@ -11,7 +11,9 @@ interface TaskProps {
 }
 
 export const Task: React.FC<TaskProps> = ({ task, onToggle }) => {
-  const statusClass = task.completed ? 'task completed' : 'task incomplete'
+  const statusClass = task.completed
+    ? 'task task-completed'
+    : 'task task-incomplete'
   return (
     <div onClick={() => onToggle(task.id)} className={statusClass}>
       {task.title}
