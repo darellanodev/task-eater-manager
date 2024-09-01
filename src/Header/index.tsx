@@ -23,7 +23,7 @@ export const Header = ({
   <header>
     <div className="wrapper">
       <div>
-        <img id="logo" src="img/logo.svg" />
+        <img id="logo" src="src/assets/img/logo.svg" />
         <h1>Task Eater Manager</h1>
       </div>
       <div>

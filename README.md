@@ -1,6 +1,6 @@
 # Task Eater Manager
 
-![Task Eater Manager banner](https://github.com/darellanodev/task-eater-manager/blob/main/img/github_readme/banner.png?raw=true)
+![Task Eater Manager banner](https://github.com/darellanodev/task-eater-manager/blob/main/github_readme/banner.png?raw=true)
 
 A clicker style game based on a to-do task management. For learning purposes using Typescript and Jest. _(THIS APPLICATION IS IN AN EARLY STAGE OF DEVELOPMENT)_
 
