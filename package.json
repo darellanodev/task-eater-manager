@@ -34,7 +34,7 @@
     "preview": "vite preview",
     "sb": "storybook dev -p 6006",
     "sb:build": "storybook build",
-    "all:build": "yarn build && yarn sb:build",
+    "all:build": "pnpm build && pnpm sb:build",
     "test": "jest --colors",
     "start": "json-server --watch db.json",
     "e2e": "pnpm dlx playwright test"
