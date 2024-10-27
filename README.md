@@ -4,6 +4,10 @@
 
 A clicker style game based on a to-do task management. For learning purposes using Typescript and Jest. _(THIS APPLICATION IS IN AN EARLY STAGE OF DEVELOPMENT)_
 
+## Github repository
+
+- <https://github.com/darellanodev/task-eater-manager>
+
 ## requeriments
 
 Node, pnpm (recommended instead of npm).
